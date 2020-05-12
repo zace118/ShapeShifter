@@ -1,0 +1,11 @@
+#row1 {
+  /* margin: 20vh 2vw; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#row2 {
+  /* margin: 20vh 2vw; */
+  display: flex;
+  justify-content: space-between;
+}

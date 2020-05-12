@@ -1,0 +1,15 @@
+.buttons {
+  margin: 20vh 20vw;
+}
+
+#row1 {
+  margin: 2vh 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+#row2 {
+  margin: 2vh 2vw;
+  display: flex;
+  justify-content: space-between;
+}
