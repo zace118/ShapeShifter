@@ -1,15 +1,16 @@
 import React from 'react';
 import './App.css';
 import ButtonDiv from './components/ButtonDiv/ButtonDiv';
-// import ShapeDiv from './components/Shape';
+import ShapeDiv from './components/ShapeDiv/ShapeDiv';
 
 const App = () => {
 
-
-
     return (
-        <ButtonDiv />
-        // <ShapeDiv />
+        <div>
+            <ButtonDiv />
+            <ShapeDiv />
+        </div>
+
     )
 }
 

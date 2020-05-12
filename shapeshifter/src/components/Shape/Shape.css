@@ -1,0 +1,37 @@
+.shape {
+  position: relative;
+  width: 54px;
+  box-sizing: content-box;
+  border-width: 50px 18px 0;
+  border-style: solid;
+  border-color: #d3c4e3 transparent;
+}
+.shape:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -85px;
+  left: -18px;
+  border-width: 0 45px 35px;
+  border-style: solid;
+  border-color: transparent transparent #d3c4e3;
+}
+
+/* Circle */
+/* background: #d3c4e3;
+width: 100px;
+height: 100px;
+border-radius: 50%; */
+
+/* Triangle */
+/* width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #d3c4e3; */
+
+/* Square */
+/* background: #d3c4e3;
+width: 100px;
+height: 100px; */

@@ -4,8 +4,6 @@ import './ButtonRow.css';
 
 const ButtonRow = props => {
 
-    console.log(props.shapeOptions)
-
     return (
         <div className="buttonRow">
             <Button shapeName={props.shapeOptions[0]} />
