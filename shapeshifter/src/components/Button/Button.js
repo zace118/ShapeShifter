@@ -1,30 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Button.css';
 
-class Button extends Component {
+const Button = (props) => {
 
-    state = {
-        shape: "circle"
-    }
-
-    shapeHandler = (e) => {
-        e.preventDefault();
-        console.log(`Current State: ${this.state.shape}`);
-        console.log(`New Shape: ${this.props.shapeName}`);
-        // console.log(typeof (props.shapeName));
-        this.setState({
-            shape: this.props.shapeName
-        }, () => {
-            console.log(`Updated State: ${this.state.shape}`)
-        });
-    }
-
-
-    render() {
-        return (
-            <button onClick={this.shapeHandler}>{this.props.shapeName}</button>
-        )
-    }
+    return (
+        <button
+            id={(props.shapeName).toLowerCase()}
+            onClick={props.onClick}>
+            {props.shapeName}
+        </button>
+    )
 
 }
 

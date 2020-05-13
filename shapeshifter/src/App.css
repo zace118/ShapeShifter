@@ -1,11 +1,9 @@
-#row1 {
-  /* margin: 20vh 2vw; */
-  display: flex;
-  justify-content: space-between;
+.buttonDiv {
+  margin: 10vh 10vw;
 }
 
-#row2 {
-  /* margin: 20vh 2vw; */
+.shapeDiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 5vh 0;
 }
