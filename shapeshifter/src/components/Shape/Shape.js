@@ -1,81 +1,63 @@
 import React from 'react';
 import './Shape.css';
 
-// Circle
-//   background: #d3c4e3;
-//   width: 100px;
-//   height: 100px;
-//   border-radius: 50%;
-
 const Shape = props => {
 
-    let updatedShape = props.shape.shape;
+    let updatedShape = props.shape.shape.toLowerCase();
 
-    // const style = {
-    //     circle: {
-    //         background: "#d3c4e3",
-    //         width: "100px",
-    //         height: "100px",
-    //         borderRadius: "50%"
-    //     },
-    //     triangle: {
-    //         background: "#d3c4e3",
-    //         width: 0,
-    //         height: 0,
-    //         borderLeft: "50px solid transparent",
-    //         borderRight: "50px solid transparent",
-    //         borderBottom: "100px solid #d3c4e3"
-    //     },
-    //     square: {
-    //         background: "#d3c4e3",
-    //         width: "100px",
-    //         height: "100px"
-    //     }
-    // }
-
-    // console.log(style.circle);
     console.log(updatedShape);
-    console.log(props.shape.shape);
-    // console.log(style.updatedShape);
 
     switch (updatedShape) {
         case 'triangle':
-            // return {
-            //     background: "#d3c4e3",
-            //     width: 0,
-            //     height: 0,
-            //     borderLeft: "50px solid transparent",
-            //     borderRight: "50px solid transparent",
-            //     borderBottom: "100px solid #d3c4e3"
-            // };
-            console.log("balls!!!")
+            console.log("triangle hit")
+            return (
+                <div className="triangle" ></div>
+            )
+
             break;
         case 'square':
-            // return {
-            //     background: "#d3c4e3",
-            //     width: "100px",
-            //     height: "100px"
-            // };
-            console.log("balls!!!!")
+            console.log("square hit")
+            return (
+                <div className="square" ></div>
+            )
+
+            break;
+        case 'pentagon':
+            console.log("pentagon hit")
+            return (
+                <div className="pentagon" ></div>
+            )
+
+            break;
+        case 'hexagon':
+            console.log("hexagon hit")
+            return (
+                <div className="hexagon" ></div>
+            )
+
+            break;
+        case 'octagon':
+            console.log("octagon hit")
+            return (
+                <div className="octagon" ></div>
+            )
+
+            break;
+        case 'pacman':
+            console.log("pacman hit")
+            return (
+                <div className="pacman" ></div>
+            )
+
             break;
         default:
-            // return {
-            //     background: "#d3c4e3",
-            //     width: "100px",
-            //     height: "100px",
-            //     borderRadius: "50%"
-            // };
-            console.log("balls")
+            console.log("deafult hit")
+            return (
+                <div className="circle" ></div >
+            )
 
     }
 
-
-
-    return (
-        // < div className="shape" style={style.updatedShape} ></div >
-        // <div className="shape" style={{ styleHandler }}></div >
-        <div className="shape"></div >
-    )
 }
 
 export default Shape;

@@ -24,7 +24,7 @@ const App = () => {
         console.log(`Updated State: ${shapeState.shape}`)
     })
 
-    const shapeOptions = ["Triangle", "Square", "Pentagon", "Hexagon", "Heptagon", "Octogon"];
+    const shapeOptions = ["Triangle", "Square", "Pentagon", "Hexagon", "Octagon", "Pacman"];
 
     const createButtons = shapeOptions.map((shape, index) => {
         return (
